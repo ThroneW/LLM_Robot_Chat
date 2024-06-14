@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.chat-container {
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box .message {
+    display: block;
+    clear: both;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+.chat-box .user {
+    align-self: flex-end; /* 用户消息靠右对齐 */
+    background-color: #007bff;
+    color: white;
+}
+
+.chat-box .bot {
+    align-self: flex-start; /* 机器人消息靠左对齐 */
+    background-color: #e1e1e1;
+    color: #333;
+}
+
+#chat-form {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#chat-form input[type="text"] {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+#chat-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#chat-form button:hover {
+    background-color: #0056b3;
+}

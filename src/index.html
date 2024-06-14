@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="input-group">
+            <button type="button" onclick="login()">Login</button>
+        </div>
+    </form>
+    <div class="button-group">
+        <button id="medicalBtn" onclick="location.href='medical-bot.html'" disabled>医疗对话机器人</button>
+        <button id="financeBtn" onclick="location.href='finance-tool.html'" disabled>金融知识小工具</button>
+        <button id="chatBotBtn" onclick="location.href='chat-bot.html'" disabled>基于GPT2的闲聊机器人</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

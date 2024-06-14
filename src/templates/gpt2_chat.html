@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>基于GPT2的闲聊机器人</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            基于GPT2的闲聊机器人
+        </div>
+        <div class="chat-box" id="chat-box">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="../static/gpt2_chat.js"></script>
+</body>
+</html>
